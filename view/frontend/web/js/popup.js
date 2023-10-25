@@ -55,7 +55,7 @@ define([
             //Check show trigger
             if (this.options.dataPopup.afterSeconds.isAfterSeconds) {
                 setTimeout(function () {
-                    triggerElem.show();
+                    bioEp.init(self.options.dataPopup.popupConfig);
                     self._setDefaultSize();
                 }, this.options.dataPopup.afterSeconds.delay * 1000);
             } else {
